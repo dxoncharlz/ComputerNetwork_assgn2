@@ -1,3 +1,4 @@
+package src;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -9,9 +10,10 @@ public class HTMLServer {
         serverSocket = new ServerSocket(6789);
         System.out.println("TCP Echo server now running");
 
-        while(true) {
+       /* while(true) {
 
 
-        }
+        }*/
+        System.out.println("TCP Echo server now running");
     }
 }
