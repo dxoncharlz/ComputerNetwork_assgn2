@@ -2,11 +2,11 @@ package src;
 
 import java.net.Socket;
 
-public class HTMLThread extends Thread {
+public class HTTPThread extends Thread {
 
     private Socket socket;
 
-    public HTMLThread(Socket s) {
+    public HTTPThread(Socket s) {
         socket = s;
     }
 

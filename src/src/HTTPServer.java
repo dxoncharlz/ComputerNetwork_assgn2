@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class HTMLServer {
+public class HTTPServer {
     private static ServerSocket serverSocket;
 
     public static void main(String[] args) throws IOException {
@@ -13,7 +13,7 @@ public class HTMLServer {
         while(true) {
             Socket clientSocket = serverSocket.accept();
 
-            HTMLThread thread = new HTMLThread(clientSocket);
+            HTTPThread thread = new HTTPThread(clientSocket);
             thread.run();
         }
     }
